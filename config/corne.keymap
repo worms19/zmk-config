@@ -35,37 +35,38 @@
 
                 default_layer {
 // .--------------------------------------------------------------.       .-----------------------------------------------------------.
-// |   ESC        |    Q    |    W   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |    \     |
+// |   ESC        |    A    |    Z   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |    \     |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |   CTRL/Tab   |    A    |    S   |   D    |    F    |    G    |       |   H   |    J    |    K    |    L    |     ;    |     '    |
+// |   CTRL/Tab   |    Q    |    S   |   D    |    F    |    G    |       |   H   |    J    |    K    |    L    |     M    |     '    |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |   SHFT       |    Z    |    X   |   C    |    V    |    B    |       |   N   |    M    |    ,    |    .    |     /    | ` | ALT  |
+// |   SHFT       |    W    |    X   |   C    |    V    |    B    |       |   N   |    ,    |    ;    |    :    |     =    | ` | ALT  |
 // '---------------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
 //                                   |  GUI   |   MO1   |   ENT   |       |  SPC  |   BKSP  |  CAPS   |
 //                                   '--------+---------+---------'       '-------+---------+---------'
                         bindings = <
-   &kp ESC        &kp FR_A       &kp FR_Z      &kp FR_E     &kp FR_R           &kp FR_T   &kp FR_Y  &kp FR_U           &kp FR_I        &kp FR_O    &kp FR_P   &kp BACKSLASH
-   &mt LCTRL TAB  &kp FR_Q       &kp FR_S      &kp FR_D     &kp FR_F           &kp FR_G   &kp FR_H  &kp FR_J           &kp FR_K        &kp FR_L    &kp FR_M   &kp SQT
-   &kp LSHFT      &kp FR_W       &kp FR_X      &kp FR_C     &kp FR_V           &kp FR_B   &kp FR_N  &kp FR_M           &kp COMMA       &kp DOT     &kp FSLH   &mt RALT GRAVE
-                  &kp LGUI    &mo 1      &lt NAVI RET              &kp SPACE       &kp BSPC    &kp CAPSLOCK
+   &kp ESC        &kp FR_A       &kp FR_Z      &kp FR_E         &kp FR_R           &kp FR_T   &kp FR_Y  &kp FR_U           &kp FR_I        &kp FR_O     &kp FR_P        &kp BACKSLASH
+   &mt LCTRL TAB  &kp FR_Q       &kp FR_S      &kp FR_D         &kp FR_F           &kp FR_G   &kp FR_H  &kp FR_J           &kp FR_K        &kp FR_L     &kp FR_M        &kp SQT
+   &kp LSHFT      &hm LSHFT FR_W &hm LALT FR_X &hm LCTRL FR_C   &hm LCMD FR_V      &kp FR_B   &kp FR_N  &hm RCMD FR_M      &hm RCTRL COMMA &hm RALT DOT &hm RSHFT FSLH  &mt RALT GRAVE
+                                                                                                        
+                  &kp LGUI    &mo 1   &kp SPACE     &kp RET       &lt NAVI BSPC    &kp CAPSLOCK
                         >;
                 };
-                
+        
                 lower_layer {
 // .--------------------------------------------------------------.       .-----------------------------------------------------------.
 // |   ESC        |    1    |    2   |   3    |    4    |    5    |       |   6   |    7    |    8    |    9    |     0    |    `     |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
 // |              |    !    |    @   |   #    |    $    |    %    |       |   ^   |    &    |    *    |    (    |     )    |     :    |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |   SHFT       |         |    +   |   -    |    {    |    [    |       |   ]   |    }    |    =    |    _    |          |          |
+// |   SHFT       |    |    |    [   |   ]    |    {    |    }    |       |   ]   |    }    |    =    |    _    |          |          |
 // '---------------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
 //                                   |  GUI   |         |   MO3   |       |   ,   |    .    |   ?     |
 //                                   '--------+---------+---------'       '-------+---------+---------'
                         bindings = <
-   &kp ESC    &kp FR_N1    &kp FR_N2         &kp FR_N3          &kp FR_N4            &kp FR_N5            &kp FR_N6                &kp FR_N7                  &kp FR_N8              &kp FR_N9                &kp FR_N0  &kp GRAVE
-   &trans     &kp FR_EXCL  &kp FR_AT         &kp FR_HASH        &kp DLLR             &kp PRCNT            &kp CARET                &kp AMPS                   &kp KP_MULTIPLY        &kp LPAR                 &kp RPAR   &kp COLON
-   &kp LSHFT  &trans       &kp KP_PLUS       &kp KP_MINUS       &kp LEFT_BRACE       &kp FR_LEFT_BRACKET  &kp FR_RIGHT_BRACKET     &kp RIGHT_BRACE            &kp KP_EQUAL           &kp UNDERSCORE           &trans     &trans
-                                             &kp LGUI           &trans               &mo ADJUST           &kp KP_N1                &kp KP_N2                  &kp KP_N3
+   &trans     &kp FR_EXCL  &kp FR_AT           &kp FR_HASH              &kp DLLR             &kp PRCNT                        &kp CARET                &kp AMPS                   &kp KP_MULTIPLY        &kp LPAR                 &kp RPAR   &kp COLON
+   &kp ESC    &kp FR_N1    &kp FR_N2           &kp FR_N3                &kp FR_N4            &kp FR_N5                        &kp FR_N6                &kp FR_N7                  &kp FR_N8              &kp FR_N9                &kp FR_N0  &kp GRAVE
+   &kp LSHFT  &kp FR_PIPE  &kp FR_LEFT_BRACKET &kp FR_RIGHT_BRACKET     &kp FR_LEFT_BRACE    &kp FR_RIGHT_BRACE               &kp FR_RIGHT_BRACKET     &kp RIGHT_BRACE            &kp KP_EQUAL           &kp UNDERSCORE           &trans     &trans
+                                        &kp LGUI           &trans               &mo ADJUST           &kp KP_N1                &kp KP_N2                  &kp KP_N3
                         >;
                 };
                 
