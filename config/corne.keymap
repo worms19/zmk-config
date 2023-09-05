@@ -63,7 +63,7 @@
 //                                   |  GUI   |         |   MO3   |       |   ,   |    .    |   ?     |
 //                                   '--------+---------+---------'       '-------+---------+---------'
                         bindings = <
-   &trans     &kp FR_EXCL  &kp FR_AT           &kp FR_HASH              &kp DLLR             &kp PRCNT                        &kp CARET                &kp AMPS                   &kp KP_MULTIPLY        &kp LPAR                 &kp RPAR   &kp COLON
+   &trans     &kp FR_AT    &kp FR_AMPS         &kp FR_E_ACUTE           &kp FR_DQT           &kp FR_SQT                        &kp CARET                &kp AMPS                   &kp KP_MULTIPLY        &kp LPAR                 &kp RPAR   &kp COLON
    &kp ESC    &kp FR_N1    &kp FR_N2           &kp FR_N3                &kp FR_N4            &kp FR_N5                        &kp FR_N6                &kp FR_N7                  &kp FR_N8              &kp FR_N9                &kp FR_N0  &kp GRAVE
    &kp LSHFT  &kp FR_PIPE  &kp FR_LEFT_BRACKET &kp FR_RIGHT_BRACKET     &kp FR_LEFT_BRACE    &kp FR_RIGHT_BRACE               &kp FR_RIGHT_BRACKET     &kp RIGHT_BRACE            &kp KP_EQUAL           &kp UNDERSCORE           &trans     &trans
                                         &kp LGUI           &trans               &mo ADJUST           &kp KP_N1                &kp KP_N2                  &kp KP_N3
